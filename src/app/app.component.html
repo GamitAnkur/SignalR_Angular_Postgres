@@ -1,0 +1,53 @@
+<div class="float-container">
+  <h1 >SignalR Chat App</h1>
+  <div class="float-child-1">
+    <div class="containt">
+
+
+      <label >Send To :</label>
+      <select class="form-control" [(ngModel)]="selectedUser">
+        <option  [value] = connected_user  *ngFor="let connected_user of connectedUser ">{{connected_user}}</option>
+        <option value= "Privategroup_A">Group_A</option>
+        <option value= "Privategroup_B">Group_B</option>
+        <option value= "broadcast">broadcast</option>
+      </select><br><br>
+
+
+
+    <!-- <form  (ngSubmit)="sendMessage(user, message)">
+      <label>User</label>
+      <input type="text"  class="form-control" [(ngModel)]="user" name="user" placeholder="user" /><br>
+      <label>Message</label>
+      <input class="form-control"
+        type="text"
+        [(ngModel)]="message"
+        name="message"
+        placeholder="Message"
+      /><br>
+
+
+    <button  class="btn btn-primary" type="button" value="Private_Group" (click)="joingroup_A()">Group_A</button>
+    <button  class="btn btn-primary" type="button" value="Private_Group" (click)="joingroup_B()">Group_B</button>
+
+    <button  class="btn btn-success" type="submit">Send</button>
+    </form> -->
+    </div>
+  </div>
+
+
+  <!-- --- Message --- -->
+    <div class="float-child-2">
+      <h5 class="containt" >Messages:</h5>
+      <div class="containt" *ngFor="let message of messages">
+      {{ message }}
+      <hr>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+

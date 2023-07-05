@@ -1,0 +1,66 @@
+/* @import "../node_modules/toastr/build/toastr.css"; */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+  margin: 2%;
+}
+
+.float-child-1 {
+  width: 48%;
+  float: left;
+  /* padding: 20px; */
+  height: 360px;
+  border: 2px solid blue;
+  border-radius: 2%;
+}
+
+.float-child-2{
+  float: right;
+  width: 48%;
+  height: 360px;
+  /* padding: 20px; */
+  border: 2px solid green;
+  border-radius: 2%;
+
+}
+
+button{
+
+  margin: 1%;
+}
+
+.containt{
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+
+/* -- For Title -- */
+
+  h1 {
+    margin-left: 20%;
+    margin-bottom: 3%;
+  font-size: 70px;
+  font-weight: 500;
+  color: #553c9a;
+  border-right: 4px solid #000;
+  animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes cursor{
+  0%, 100%{border-color: transparent;}
+  50%{border-color: #000;}
+}
+
+@keyframes typing{
+  0%{ width: 0ch} /*Text is hidden*/
+  30%{ width: 16ch;} /*The enitre header will be typed out*/
+  80%{ width: 16ch;} /*Text stays visible*/
+  90%{ width: 0ch;} /*Text is deleted*/
+  100%{ width: 0ch;} /*Text stays hidden*/
+}
+
+
